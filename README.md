@@ -95,5 +95,3 @@ Below you'll find some popular JS libraries, frameworks, and packages, and their
 - [PHPStan](https://phpstan.org/) - Robust static analysis tool for PHP that helps improve code quality and prevent potential bugs. PHPStan performs in-depth analysis by examining code and providing feedback on type errors, undefined variables, and other common mistakes. 
 
 ---
-
-<span class="text-sm text-gray-500 block text-center">Thrown together by [Andrew Schmelyun](https://aschmelyun.com) &mdash; Edit on [GitHub](https://github.com/aschmelyun/jstophp)</span>
