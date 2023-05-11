@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="theme-color" content="#9ea4f2">
+
+    <!-- SEO -->
+    <meta name="description" content="<%= description %>">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jstophp.com">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:site_name" content="JS to PHP" />
+    <meta property="og:image" content="<%= image %>">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aschmelyun">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= description %>">
+    <meta name="twitter:image" content="<%= image %>">
+
+    <style>
+        .content ul li:first-child::after {
+            content: "⤻";
+            display: block;
+            position: absolute;
+            bottom: -3.25rem;
+            left: -0.25rem;
+            font-size: 3.25rem;
+            transform: rotate(97deg);
+            color: #9ea4f2;
+        }
+        .content ul:first-of-type li:first-child::after {
+            content: "";
+            display: none;
+        }
+        .content ul:not(:first-of-type) > li::before {
+            content: "";
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto py-8">
+        <main class="content prose mx-auto">
+            <%- content %>
+        </main>
+    </div>
+</body>
+</html>
